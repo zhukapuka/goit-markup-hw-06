@@ -325,7 +325,7 @@ button {
     display: none;
   }
 }
-/* ----------------#first section mobile--------------- */
+/* ----------------#first section hero--------------- */
 .first-section {
   background: #2e2f42;
   max-width: 320px;
@@ -402,28 +402,144 @@ button {
   text-align: center;
   color: #fff;
 }
-
+@media screen and (min-width: 768px) {
+  .first-section-header {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .first-section-header {
+    margin-bottom: 48px;
+  }
+}
 .btn {
-  display: block;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  cursor: pointer;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin-top: 48px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: #4d5ae5;
-  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
   background: #404bbf;
 }
-/* ----------------#endfirst section mobile--------------- */
+/* ----------------#end_first section hero--------------- */
+/* ----------------#second section our-advantages---------------*/
+/* #region Our advantages */
+.second-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+}
+.second-section-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.second-section-item:first-child {
+  margin-top: 96px;
+}
+
+.second-section-item-header {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  text-align: center;
+  color: #2e2f42;
+}
+.second-section-item-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.antena,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .second-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .second-section-item {
+    width: calc((100% - 48px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .second-section-item:nth-child(2) {
+    margin-top: 96px;
+  }
+  .second-section-item-header {
+    text-align: start;
+  }
+  .second-section-item-description {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .second-section-list {
+    gap: 24px;
+  }
+  .second-section-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .icon-section-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+  }
+  .second-section-item:first-child,
+  .second-section-item:nth-child(2) {
+    margin-top: 120px;
+  }
+  .second-section-item {
+    margin-top: 120px;
+  }
+  .antena,
+  .icon-clock,
+  .icon-diagram,
+  .icon-astronaut {
+    display: block;
+  }
+  .second-section-item-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .second-section-item-description {
+    font-weight: 400;
+  }
+}
+/* #endregion */
+
+/* ----------------#end_second section our-advantages---------------*/
