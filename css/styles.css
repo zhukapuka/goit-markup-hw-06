@@ -325,3 +325,64 @@ button {
     display: none;
   }
 }
+/* ----------------#first section mobile--------------- */
+.first-section {
+  background: #2e2f42;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Simple_mobile/people-office@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Retina_mobile/people-office@2x.jpg);
+  }
+}
+.first-section-header {
+  max-width: 216px;
+  margin: auto;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus {
+  background: #404bbf;
+}
+/* ----------------#endfirst section mobile--------------- */
