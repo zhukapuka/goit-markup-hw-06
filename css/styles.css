@@ -439,26 +439,21 @@ button {
 }
 /* ----------------#end_first section hero--------------- */
 /* ----------------#second section our-advantages---------------*/
-/* #region Our advantages */
+.second-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  width: 100%;
+}
 .second-section-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: 72px 24px;
   justify-content: center;
 }
-.second-section-item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.second-section-item:first-child {
-  margin-top: 96px;
-}
-
 .second-section-item-header {
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   line-height: 1.11;
   text-align: center;
@@ -478,20 +473,11 @@ button {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .second-section-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-    justify-content: center;
-  }
   .second-section-item {
     width: calc((100% - 48px) / 2);
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
-  .second-section-item:nth-child(2) {
-    margin-top: 96px;
   }
   .second-section-item-header {
     text-align: start;
@@ -518,18 +504,11 @@ button {
     padding: 24px 100px;
     margin-bottom: 8px;
   }
-  .second-section-item:first-child,
-  .second-section-item:nth-child(2) {
-    margin-top: 120px;
-  }
-  .second-section-item {
-    margin-top: 120px;
-  }
   .antena,
   .icon-clock,
   .icon-diagram,
   .icon-astronaut {
-    display: block;
+    display: flex;
   }
   .second-section-item-header {
     font-weight: 500;
@@ -539,7 +518,92 @@ button {
   .second-section-item-description {
     font-weight: 400;
   }
+  .second-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 100%;
+  }
 }
-/* #endregion */
-
 /* ----------------#end_second section our-advantages---------------*/
+
+/* ----------------third section our-team---------------*/
+.third-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+  background-color: #f4f4fd;
+}
+.third-section-header {
+  margin-bottom: 72px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.third-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  justify-content: center;
+}
+.third-section-item {
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 428px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.third-section-item-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+h3.third-section-item-header {
+  margin-bottom: 8px;
+}
+.third-section-item-descriptoin {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+/* ------------add decoration icons social nets----------- */
+.third-section-icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.third-section-icons-item {
+  width: 40px;
+  height: 40px;
+}
+.third-section-icons-item-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-svg {
+  fill: #f4f4fd;
+}
+.third-section-icons-item-link:hover,
+.third-section-icons-item-link:focus {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* --------------------#end_third section our-team------------------------ */
