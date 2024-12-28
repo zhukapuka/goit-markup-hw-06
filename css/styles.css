@@ -566,7 +566,7 @@ button {
   text-align: center;
   color: #2e2f42;
 }
-h3.third-section-item-header {
+.third-section-item-header {
   margin-bottom: 8px;
 }
 .third-section-item-descriptoin {
@@ -578,6 +578,10 @@ h3.third-section-item-header {
   color: #434455;
 }
 /* ------------add decoration icons social nets----------- */
+.third-card-desc {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .third-section-icons-list {
   display: flex;
   justify-content: center;
