@@ -145,7 +145,9 @@
           <h1 class="first-section-header">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn" type="button">Order Service</button>
+          <button class="btn" type="button" order-mobile-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--====================SECTION2=================-->
@@ -812,9 +814,9 @@
       </div>
     </footer>
     <!-- ======backdrop===is-open======= -->
-    <div class="hidden cbackdrop is-open">
+    <div class="backdrop" order-mobile>
       <div class="modal-container">
-        <button type="button" class="modal-button-close">
+        <button type="button" class="modal-button-close" order-mobile-close>
           <svg class="icon-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-button-close"></use>
           </svg>
@@ -906,5 +908,6 @@
       </div>
     </div>
     <script src="./js/mobile.js"></script>
+    <script src="./js/order.js"></script>
   </body>
 </html>
