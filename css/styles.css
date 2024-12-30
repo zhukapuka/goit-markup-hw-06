@@ -624,6 +624,7 @@ button {
   padding-top: 96px;
   padding-bottom: 96px;
   width: 100%;
+  margin: 0 auto;
 }
 .forth-section-header {
   font-weight: 700;
@@ -726,7 +727,6 @@ button {
   .forth-section {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1440px;
   }
   .forth-section-item {
     width: calc((100% - 48px) / 3);
